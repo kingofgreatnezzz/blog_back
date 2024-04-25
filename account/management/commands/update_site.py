@@ -6,7 +6,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **kwargs):
         site = Site.objects.get_current()
-        site.domain = 'localhost:3000'  # Use your React app URL here
-        site.name = 'My React App'  # Choose a name for your site
+        site.domain = "https://article-blog-0wfl.onrender.com" # Use your React app URL here
+        site.name = 'Simple App'  # Choose a name for your site
         site.save()
         self.stdout.write(self.style.SUCCESS('Site domain and name updated successfully'))

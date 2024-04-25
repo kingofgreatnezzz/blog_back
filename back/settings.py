@@ -215,8 +215,8 @@ DJOSER = {
     'USERNAME_RESET_CONFIRM_URL': 'email/reset/confirm/{uid}/token',
     'ACTIVATION_URL': 'activate/{uid}/{token}',
     'SEND_ACTIVATION_EMAIL': False,
-    'DOMAIN': 'localhost:3000',  # Use your React app URL
-    'SITE_NAME': 'My React App',
+    'DOMAIN': 'https://article-blog-0wfl.onrender.com',  # Use your React app URL
+    'SITE_NAME': 'Simple App',
     'SERIALIZERS': {
         'user_create': 'account.serializers.UserCreateSerializer',
         'user': 'account.serializers.UserCreateSerializer',
