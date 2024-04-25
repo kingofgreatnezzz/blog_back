@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-r5chnd9#yh7dz+j@f=h2#xnam&8dx=b-th2xh_$8)huai8b%2!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://article-blog-0wfl.onrender.com", 'dpg-cm81jued3nmc73auht10-a', "*"]
+ALLOWED_HOSTS = ['https://secureweb-beta.vercel.app']
 
 # Application definition
 
@@ -81,22 +81,12 @@ WSGI_APPLICATION = 'back.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
-"""
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-"""
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'article_blogs',
-        'USER': 'king',
-        'PASSWORD': 'tBKChOt0a0kjq30PWidUykGf0oQFWWMB',
-        'HOST': 'dpg-cm81jued3nmc73auht10-a',
-        'PORT': '5432',
     }
 }
 
@@ -215,7 +205,7 @@ DJOSER = {
     'USERNAME_RESET_CONFIRM_URL': 'email/reset/confirm/{uid}/token',
     'ACTIVATION_URL': 'activate/{uid}/{token}',
     'SEND_ACTIVATION_EMAIL': False,
-    'DOMAIN': 'https://article-blog-0wfl.onrender.com',  # Use your React app URL
+    'DOMAIN': 'https://secureweb-beta.vercel.app',  # Use your React app URL
     'SITE_NAME': 'Simple App',
     'SERIALIZERS': {
         'user_create': 'account.serializers.UserCreateSerializer',
