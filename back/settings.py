@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-r5chnd9#yh7dz+j@f=h2#xnam&8dx=b-th2xh_$8)huai8b%2!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://secureweb-beta.vercel.app', 'https://blog-back-kvpn.onrender.com' '*']
+ALLOWED_HOSTS = ['https://secureweb-beta.vercel.app', 'https://onrender.com' '*']
 
 # Application definition
 
